@@ -1,0 +1,11 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+}
+
+form {
+    width: 70%;
+    margin: 2% auto;
+    border: 1px solid rgb(56, 53, 199);
+    border-radius: 7px;
+}
