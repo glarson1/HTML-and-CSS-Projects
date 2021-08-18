@@ -46,10 +46,10 @@
 				<h1>PHOTOS</h1>
 				<div>
 		
-		<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="One_Page_Photos/Waterpark_2.jpg" alt="Waterslide">
+		PHOTO-CONTAINER 1 -->
+					<div class="row">
+						<div class="column">
+							<img src="One_Page_Photos/Waterpark_2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Waterslide">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>The slides will be waiting for you!</p>
@@ -59,9 +59,9 @@
 					<!-- END PHOTO-CONTAINER 1 -->
 					
 						<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="One_Page_Photos/Waterpark_3.jpg" alt="Waterslide">
+					<div class="row">
+						<div class="column">
+							<img src="One_Page_Photos/Waterpark_3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Waterslide">
 							<div>
 								<h3>Click to Enlarge</h3>
 								<p>The slides will be waiting for you!</p>
@@ -69,7 +69,85 @@
 						</div>
 					</div>
 					<!-- END PHOTO-CONTAINER 2 -->
+
+						<!-- PHOTO-CONTAINER 3 -->
+						<div class="row">
+							<div class="column">
+								<img src="One_Page_Photos/Waterpark_4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Waterslide">
+								<div>
+									<h3>Click to Enlarge</h3>
+									<p>The slides will be waiting for you!</p>
+								</div>
+							</div>
+						</div>
+						<!-- END PHOTO-CONTAINER 3 -->
+
+							<!-- PHOTO-CONTAINER 4 -->
+					<div class="row">
+						<div class="column">
+							<img src="One_Page_Photos/Waterpark_5.png" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Waterslide">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>The slides will be waiting for you!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 4
+
+													<!-The Modal/Lightbox -->
+					<div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
 					
+						<div class="mySlides">
+							<div class="numbertext">1 / 4</div>
+							<img src="One_Page_Photos/Waterpark_2.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">2 / 4</div>
+							<img src="One_Page_Photos/Waterpark_3.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">3 / 4</div>
+							<img src="One_Page_Photos/Waterpark_4.jpg" style="width:100%">
+						</div>
+					
+						<div class="mySlides">
+							<div class="numbertext">4 / 4</div>
+							<img src="One_Page_Photos/Waterpark_5.png" style="width:100%">
+						</div>
+					
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+					
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo" src="One_Page_Photos/Waterpark_2.jpg" onclick="currentSlide(1)" alt="Waterslide">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="One_Page_Photos/Waterpark_3.jpg" onclick="currentSlide(2)" alt="Waterslide">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="One_Page_Photos/Waterpark_4.jpg" onclick="currentSlide(3)" alt="Waterslide">
+						</div>
+					
+						<div class="column">
+							<img class="demo" src="One_Page_Photos/Waterpark_5.png" onclick="currentSlide(4)" alt="Waterslide">
+						</div>
+						</div>
+					</div>
+					   						<!-- End Lightbox -->
+
 					<!-- YOUTUBE VIDEO -->
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/MOPrhSHaR0Y" 
 					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -108,4 +186,5 @@
 		</div>
 		
 		<!-- END Footer -->
+		<script src="JS/one_page_website.js"></script>
 	</body>
