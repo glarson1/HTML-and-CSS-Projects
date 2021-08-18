@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="watermelon">
+            <h1>A Heading</h1>
+            <button type="button" onclick="loadDoc()">Change content</button>
+        </div>
+
+        <script>
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();      //Setup the xml http request object
+                xhttp.onreadystatechange = function() {       //define the ajax response callback method
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("watermelon").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "practice.txt", true); //prepare the open ajax request
+                xhttp.send(); //send the ajax request for data
+            }
+        </script>
+    </body>
+</html>
+        
